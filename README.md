@@ -1,11 +1,12 @@
-# pacman-ocp
+# pacman-k8s
 
-This is a simple pacman app that utilizes the default storage class in OCP for storing high score. 
+This is a simple pacman app that utilizes the default storage class in OCP for storing high score. Exposed by LoadBalancer.
 
 ```
-git clone https://github.com/dav1x/pacman-ocp/
-cd pacman-ocp
+git clone https://github.com/saintdle/pacman-k8s
+cd pacman-k8s
 oc create -f .
-oc get route -n pacman
+kubectl get svc -n pacman
 ```
-Play pacman
+Play pacman in your web browser on the IP address specified by the Load Balancer service
+Original code from >>> https://github.com/dav1x/pacman-ocp
