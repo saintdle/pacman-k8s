@@ -1,6 +1,6 @@
 # pacman-k8s
 
-This is a simple pacman app that utilizes the default storage class in OCP for storing high score. Exposed by LoadBalancer.
+This is a simple pacman app that utilizes the default storage class in Kubernetes for storing high score using MongoDB. Web UI Exposed by LoadBalancer.
 
 ```
 git clone https://github.com/saintdle/pacman-k8s
